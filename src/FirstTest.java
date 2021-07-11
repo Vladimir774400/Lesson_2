@@ -94,11 +94,11 @@ public class FirstTest {
 
         waitForElemByAndSendKeys(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "abrakadabraui",
+                "abrakadabrauimim",
                 "Обьект 'Search Wikipedia' не отображается в течении 5 секунд",
                 5);
 
-        waitForElem(By.xpath("//*[@class='android.view.ViewGroup' and @index='1'] or //*[@class='android.widget.TextView' and @text='No results']"),
+        waitForElem(By.xpath("//*[@class='android.view.ViewGroup' and @instance='2']"),
                 "Результатов поиска нет или не более одного",
                 10);
 
