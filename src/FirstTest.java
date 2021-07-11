@@ -59,28 +59,6 @@ public class FirstTest {
     }*/
 
     /*@Test
-    public void testCancel()
-    {
-        WebElement skipButton = waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
-                "Не найдена кнопка SKIP",
-                5);
-
-        waitForElemAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Поле поиска 'Search Wikipedia' не найдено",
-                5
-        );
-        waitForElemAndClick(
-                By.xpath("//*[@class = 'android.widget.ImageButton']"),
-                "Не найдена стрелка",
-                5);
-        waitForElemNotPresent(By.id ("org.wikipedia:id/search_lang_button"),
-                "Кнопка смены языка не исчезла",
-                5);
-
-    }*/
-
-    /*@Test
     public void testCompare()
     {
         waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
@@ -107,16 +85,36 @@ public class FirstTest {
     public void testAssertSearchText ()
     {
         waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
-                "Кнопка SKIP не найдена",
+                "Кнопка SKIP не отображается в течении 5 секунд",
                 5);
 
-        assertElementHasText(By.xpath("//*[@class='android.widget.TextView']"),
-                "Search Wikipedia",
-                "Текст не соответствует ожидаемому",
-                "Обьект не прогрузился в течении 10 секунд",
+        waitForElemAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "Поле 'Search Wikipedia' не отображается",
+                5);
+
+        waitForElemByAndSendKeys(
+                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "abrakadabrau",
+                "Обьект 'Search Wikipedia' не отображается в течении 5 секунд",
+                5);
+
+        waitForElem(By.xpath("//*[@class='android.view.ViewGroup' and @index='0']"),
+                "Ни один элемент не появилился",
                 10);
 
-        System.out.println("Тест пройден успешно!");
+        waitForElem(By.xpath("//*[@class='android.view.ViewGroup' and @index='1']"),
+                "Появился только 1 элемент",
+                10);
+
+        waitForElemAndClear(By.id("org.wikipedia:id/search_src_text"),
+                "Не могу очистить поле в течении 10 секунд",
+                10);
+
+        waitForElemNotPresent(By.xpath("//*[@class='android.view.ViewGroup' and @index='0']"),
+                "Результаты поиска по прежнему отображаются",
+                10);
+
+        System.out.println("- Тест пройден успешно!");
     }
 
 
