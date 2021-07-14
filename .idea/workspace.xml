@@ -22,6 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uZ70HqOPRtNJiomeDMXhnEYdA4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,16 +49,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomatization" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="firstTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FirstTest.testAssertSearchText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
@@ -66,20 +59,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testCancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testRTD.checkoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testCancel" />
+      <option name="MAIN_CLASS_NAME" value="testRTD" />
+      <option name="METHOD_NAME" value="checkoutTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testRTD.testAssertSearchText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="MAIN_CLASS_NAME" value="testRTD" />
+      <option name="METHOD_NAME" value="testAssertSearchText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRTD.testCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomatization" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testRTD" />
       <option name="METHOD_NAME" value="testCompare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -89,10 +92,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FirstTest.testAssertSearchText" />
-        <item itemvalue="JUnit.FirstTest.testCompare" />
-        <item itemvalue="JUnit.FirstTest.testCancel" />
-        <item itemvalue="JUnit.FirstTest.firstTest" />
         <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.testRTD.checkoutTest" />
+        <item itemvalue="JUnit.testRTD.testAssertSearchText" />
+        <item itemvalue="JUnit.testRTD.testCompare" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626021484426</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lesson 3 Ex3: Тест: отмена поиска">
+      <created>1626022370528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626022370528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

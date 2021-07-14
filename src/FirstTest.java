@@ -1,5 +1,6 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.xpath.operations.Bool;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -35,51 +36,6 @@ public class FirstTest {
         System.out.println("- Завершение теста.");
         driver.quit();
     }
-    /*@Test
-    public void firstTest()
-    {
-        //Тест
-        WebElement skipButton = waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
-                "Кнопка SKIP не найдена",
-                5);
-
-        WebElement element_search = waitForElemAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Не найдено поле 'Search Wikipedia'",
-                5);
-
-        WebElement element_search_type = waitForElemByAndSendKeys(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Java",
-                "Обьект 'Search Wikipedia' не найден",
-                5);
-
-        WebElement javaSearch = waitForElemAndClick(By.xpath("//*[@text='Java (programming language)']"),
-                "Обьект 'Java (programming language)' не найден",
-                5);
-    }*/
-
-    /*@Test
-    public void testCompare()
-    {
-        waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
-                "Кнопка SKIP не найдена",
-                5);
-
-        waitForElemAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Не найдено поле 'Search Wikipedia'",
-                5);
-
-        waitForElemByAndSendKeys(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Java",
-                "Обьект 'Search Wikipedia' не найден",
-                5);
-
-        waitForElemAndClear(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Не могу очистить поле",
-                5);
-    }*/
 
     @Test
     public void testAssertSearchText ()
@@ -94,21 +50,17 @@ public class FirstTest {
 
         waitForElemByAndSendKeys(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "abrakadabrauimim",
+                "Dzigurda",
                 "Обьект 'Search Wikipedia' не отображается в течении 5 секунд",
                 5);
 
-        waitForElem(By.xpath("//*[@class='android.view.ViewGroup' and @instance='2']"),
-                "Результатов поиска нет или не более одного",
-                10);
-
-        waitForElemAndClear(By.id("org.wikipedia:id/search_src_text"),
-                "Не могу очистить поле в течении 10 секунд",
-                10);
-
-        waitForElemNotPresent(By.xpath("//*[@class='android.view.ViewGroup' and @index='0']"),
-                "Результаты поиска по прежнему отображаются",
-                10);
+            assertElementContainsText(
+                    By.id("org.wikipedia:id/page_list_item_title"),
+                    "Java",
+                    "В результатах не содержится слов Java",
+                    "Результаты поиска не отобразились в течении 10 секунд",
+                    10
+            );
 
         System.out.println("- Тест пройден успешно!");
     }
@@ -167,6 +119,14 @@ public class FirstTest {
         Assert.assertEquals(assert_error_message,
                 value,
                 textValue);
+        return element;
+    }
+
+    private WebElement assertElementContainsText(By by, String value,  String assert_error_message, String error_message, long timeOutInSec)
+    {
+        WebElement element = waitForElem(by, error_message, timeOutInSec);
+        String textValue = element.getAttribute("text");
+        Assert.assertTrue(assert_error_message,textValue.contains(value));
         return element;
     }
 
