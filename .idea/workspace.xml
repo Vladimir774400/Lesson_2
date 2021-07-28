@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 3 Ex3: Тест: отмена поиска">
+    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 3 Ex4*: Тест: проверка слов в поиске">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
@@ -92,8 +92,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FirstTest.testAssertSearchText" />
-        <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.testRTD.checkoutTest" />
+        <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.testRTD.testAssertSearchText" />
         <item itemvalue="JUnit.testRTD.testCompare" />
       </list>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626022370528</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lesson 3 Ex4*: Тест: проверка слов в поиске">
+      <created>1626281485634</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626281485634</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +176,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Lesson 3 Ex2: Создание метода" />
     <MESSAGE value="Lesson 3 Ex3: Тест: отмена поиска" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3 Ex3: Тест: отмена поиска" />
+    <MESSAGE value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
   </component>
 </project>
