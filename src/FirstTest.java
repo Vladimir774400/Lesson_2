@@ -31,7 +31,7 @@ public class FirstTest {
         capabilities.setCapability("automationName","Appium");
         capabilities.setCapability("appPackage","org.wikipedia");
         capabilities.setCapability("appActivity",".main.MainActivity");
-        capabilities.setCapability("app","C:/Users/vnartov/Desktop/JavaAppiumAutomatization/apks/org.wikipedia_50362_apps.evozi.com.apk");
+        capabilities.setCapability("app","C:/Users/vnartov/Desktop/JavaAppiumAutomatization/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
@@ -45,10 +45,6 @@ public class FirstTest {
     @Test
     public void testAssertSearchText ()
     {
-        waitForElemAndClick(By.xpath("//*[contains(@text,'SKIP')]"),
-                "Кнопка SKIP не отображается в течении 5 секунд",
-                5);
-
         waitForElemAndClick(By.xpath("//*[contains(@text,'Search Wikipedia')]"),
                 "Поле 'Search Wikipedia' не отображается",
                 5);
@@ -57,74 +53,31 @@ public class FirstTest {
         String searchRequest = "java";
 
         waitForElemByAndSendKeys(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                By.xpath("//*[contains(@text,'Search…')]"),
                 searchRequest,
-                "Обьект 'Search Wikipedia' не отображается в течении 5 секунд",
+                "Обьект 'Search…' не отображается в течении 5 секунд",
                 5);
-
-        waitForElemAndClick(By.xpath("//*[contains(@text,'Java (programming language')]"),
-                "Элемент не найден",
-                15);
-
-        waitForElemAndClick(By.id("org.wikipedia:id/article_menu_bookmark"),
-                "Элемент сохранения не найден",
-                15);
-
-        waitForElemAndClick(By.id("org.wikipedia:id/snackbar_action"),
-                "Элемент добавления не найден",
-                15);
-
-        waitForElemByAndSendKeys(
-                By.id("org.wikipedia:id/text_input"),
-                "New list",
-                "Обьект 'Имя листа' не отображается в течении 5 секунд",
-                5);
-
-        waitForElemAndClick(By.id("android:id/button1"),
-                "Элемент кнопки ОК не найден",
-                15);
-
-        waitForElemAndClick(By.xpath("//*[@content-desc='Navigate up']"),
-                "Элемент кнопки Назад не найден",
-                15);
-
-        waitForElemAndClick(By.xpath("//*[contains(@text,'JavaScript')]"),
-                "Элемент не найден",
-                15);
-
-        waitForElemAndClick(By.id("org.wikipedia:id/article_menu_bookmark"),
-                "Элемент сохранения не найден",
-                15);
-
-        waitForElemAndClick(By.id("org.wikipedia:id/snackbar_action"),
-                "Элемент добавления не найден",
-                15);
-
-        waitForElemAndClick(By.xpath("//*[contains(@text,'New list')]"),
-                "Элемент New list не найден",
-                15);
-
-        waitForElemAndClick(By.id("org.wikipedia:id/snackbar_action"),
-                "Элемент добавления не найден",
-                15);
-
-        swipeElementLeft(By.xpath("//*[contains(@text,'JavaScript')]"),
-                "Элемент не свайпается или не удаляется");
-
 
         waitForElemAndClick(By.xpath("//*[contains(@text,'Java (programming language)')]"),
-                "Статья 'Java (programming language)' не найдена в листе",
+                "Элемент не найден",
                 15);
 
-        waitForElem(By.xpath("//*[@content-desc='Java (programming language)']"),
-                "Заголовок статьи не совпадает",
-                15);
+        String search_result_locator = "org.wikipedia:id/view_page_title_text";
+
+        assertElementPresent(By.id(search_result_locator),
+                "Элемент не найден по id");
 
         System.out.println("- Тест пройден успешно!");
     }
 
 
     //Методы
+
+    private void assertElementPresent (By by, String error_message)
+    {
+        Assert.assertTrue(error_message, driver.findElements(by).size()>0);
+    }
+
     private WebElement waitForElem(By by, String error_message, long timeOutInSec)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSec);
@@ -252,6 +205,7 @@ public class FirstTest {
             throw new AssertionError(default_message + "" + error_message);
         }
     }
+
 
     private String waitForElementAndGetAttribute (By by, String attribute, String error_message, long timeOut)
     {

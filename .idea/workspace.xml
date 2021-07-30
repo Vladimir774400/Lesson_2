@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 3 Ex4*: Тест: проверка слов в поиске">
+    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 4 Ex5: Тест: сохранение двух статей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/org.wikipedia_50362_apps.evozi.com.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
@@ -38,6 +39,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vnartov\Desktop\JavaAppiumAutomatization\apks" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.FirstTest.testAssertSearchText">
     <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -157,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626281485634</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lesson 4 Ex5: Тест: сохранение двух статей">
+      <created>1627499469694</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627499469694</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +190,7 @@
     <MESSAGE value="Lesson 3 Ex2: Создание метода" />
     <MESSAGE value="Lesson 3 Ex3: Тест: отмена поиска" />
     <MESSAGE value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
+    <MESSAGE value="Lesson 4 Ex5: Тест: сохранение двух статей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 Ex5: Тест: сохранение двух статей" />
   </component>
 </project>
