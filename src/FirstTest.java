@@ -34,6 +34,8 @@ public class FirstTest {
         capabilities.setCapability("app","C:/Users/vnartov/Desktop/JavaAppiumAutomatization/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+        prepareScreenOrientation();
     }
     @After
     public void tearDown()
@@ -62,16 +64,18 @@ public class FirstTest {
                 "Элемент не найден",
                 15);
 
-        String search_result_locator = "org.wikipedia:id/view_page_title_text";
-
-        assertElementPresent(By.id(search_result_locator),
-                "Элемент не найден по id");
+        driver.rotate(ScreenOrientation.LANDSCAPE);
 
         System.out.println("- Тест пройден успешно!");
     }
 
 
     //Методы
+
+    private void prepareScreenOrientation ()
+    {
+        driver.rotate(ScreenOrientation.PORTRAIT);
+    }
 
     private void assertElementPresent (By by, String error_message)
     {

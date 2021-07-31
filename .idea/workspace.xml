@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 4 Ex5: Тест: сохранение двух статей">
+    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 4 Ex6: Тест: assert title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/org.wikipedia_50362_apps.evozi.com.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627499469694</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lesson 4 Ex6: Тест: assert title">
+      <created>1627665002937</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627665002938</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +197,7 @@
     <MESSAGE value="Lesson 3 Ex3: Тест: отмена поиска" />
     <MESSAGE value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
     <MESSAGE value="Lesson 4 Ex5: Тест: сохранение двух статей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 Ex5: Тест: сохранение двух статей" />
+    <MESSAGE value="Lesson 4 Ex6: Тест: assert title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 Ex6: Тест: assert title" />
   </component>
 </project>
