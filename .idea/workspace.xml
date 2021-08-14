@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 4 Ex6: Тест: assert title">
+    <list default="true" id="965fac07-8e85-4ef4-8e35-b76a1c8ca33c" name="Default Changelist" comment="Lesson 4 Ex7*: Поворот экрана">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomatization/FirstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testRTD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testRTD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +44,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vnartov\Desktop\JavaAppiumAutomatization\apks" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lib.ui" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testAssertSearchText">
+  <component name="RunManager" selected="JUnit.FirstTest">
     <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
@@ -54,41 +58,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAssertSearchText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testArticleOpens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAssertSearchText" />
+      <option name="METHOD_NAME" value="testArticleOpens" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testRTD.checkoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testEx3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testRTD" />
-      <option name="METHOD_NAME" value="checkoutTest" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testEx3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testRTD.testAssertSearchText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testEx5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testRTD" />
-      <option name="METHOD_NAME" value="testAssertSearchText" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testEx5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testRTD.testCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testEx6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomatization" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testRTD" />
-      <option name="METHOD_NAME" value="testCompare" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testEx6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest.testAssertSearchText" />
-        <item itemvalue="JUnit.testRTD.checkoutTest" />
         <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="JUnit.testRTD.testAssertSearchText" />
-        <item itemvalue="JUnit.testRTD.testCompare" />
+        <item itemvalue="JUnit.FirstTest.testEx6" />
+        <item itemvalue="JUnit.FirstTest.testEx5" />
+        <item itemvalue="JUnit.FirstTest.testEx3" />
+        <item itemvalue="JUnit.FirstTest.testArticleOpens" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627665002938</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lesson 4 Ex7*: Поворот экрана">
+      <created>1627745516982</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627745516983</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +209,7 @@
     <MESSAGE value="Lesson 3 Ex4*: Тест: проверка слов в поиске" />
     <MESSAGE value="Lesson 4 Ex5: Тест: сохранение двух статей" />
     <MESSAGE value="Lesson 4 Ex6: Тест: assert title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 Ex6: Тест: assert title" />
+    <MESSAGE value="Lesson 4 Ex7*: Поворот экрана" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 Ex7*: Поворот экрана" />
   </component>
 </project>
